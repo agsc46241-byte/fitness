@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE CRUCIBLE: The Final Fitness Truth</title>
+    <meta name="description" content="A digital crucible to destroy your excuses, assess your discipline, and forge a sovereign identity. Face the Final Fitness Truth.">
+    <!-- Google Fonts: Outfit for titles, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Persistent Canvas for Forge Embers Background -->
+    <canvas id="embers-canvas"></canvas>
+
+    <!-- Overlay Sound Toggle and Navigation -->
+    <header class="app-header">
+        <div class="logo">THE CRUCIBLE</div>
+        <nav class="nav-links">
+            <button class="nav-btn active" data-target="hero-section">Home</button>
+            <button class="nav-btn" data-target="codex-section">The Codex</button>
+            <button class="nav-btn" data-target="mirror-section">The Mirror</button>
+            <button class="nav-btn" data-target="covenant-section">The Covenant</button>
+            <button class="nav-btn" data-target="tax-section">Daily Tax</button>
+        </nav>
+        <button id="sound-toggle" class="sound-btn" aria-label="Toggle Soundscape">
+            <svg class="sound-icon" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 16H9v-6h2v6zm4 0h-2V6h2v12z" />
+            </svg>
+            <span>Activate Soundscape</span>
+        </button>
+    </header>
+
+    <main class="main-container">
+        <!-- Section 1: Hero / Landing -->
+        <section id="hero-section" class="app-section active">
+            <div class="hero-content">
+                <div class="glitch-title" data-text="THE CRUCIBLE">THE CRUCIBLE</div>
+                <h2 class="hero-subtitle">The Final Fitness Truth</h2>
+                <p class="hero-intro">
+                    Humanity is drowning in information, yet starving for execution. You have spent years searching for a shortcut, a cheat code, a way to bypass the tax of biological adaptation.
+                </p>
+                <div class="warning-banner">
+                    <span class="warning-tag">WARNING</span>
+                    <span class="warning-text">This application contains no hacks, comfort, or validation. Proceed only if you are ready to dismantle your excuses.</span>
+                </div>
+                <button id="enter-btn" class="primary-btn glow-btn">Enter the Forge</button>
+            </div>
+        </section>
+
+        <!-- Section 2: Codex (Manifesto Reader) -->
+        <section id="codex-section" class="app-section">
+            <div class="section-header">
+                <span class="section-tag">I. THE CODEX</span>
+                <h2 class="section-title">What Humanity Refuses to Accept</h2>
+            </div>
+            
+            <div class="codex-viewport">
+                <article class="manifesto-text">
+                    <h3>The Great Delusion</h3>
+                    <p class="manifesto-p">
+                        You stand at the peak of human history, surrounded by the greatest abundance of physiological data, nutritional science, and training methodologies that have ever existed. You have access to real-time metabolic tracking, genetic sequencing, synthetic hormones, and infinite digital libraries detailing the exact mechanics of muscle hypertrophy and lipid oxidation.
+                    </p>
+                    <p class="manifesto-p">
+                        Yet, look around you. Look at yourself. Humanity has never been softer, more fragile, or more disconnected from its physical potential. You are drowning in information, yet you are starving for execution. You have turned the simple, primal law of physical adaptation into a bureaucratic maze of spreadsheets, supplement stacks, and self-help philosophy.
+                    </p>
+                    <p class="manifesto-p highlight">
+                        "The universe does not care about your feelings, your excuses, or your circumstances. The biology of the human animal recognizes only one language: imposed physical stress."
+                    </p>
+
+                    <h3>The Fallacy of the "Optimal"</h3>
+                    <p class="manifesto-p">
+                        The modern fitness landscape is infested with the cult of the "optimal." You see them everywhere: training enthusiasts who will not lift a dumbbell until they have calculated the exact lateral-raise angle to isolate the medial deltoid, or nutritionists who argue endlessly over whether a carbohydrate is best consumed fifty minutes before or sixty minutes after a workout.
+                    </p>
+                    <p class="manifesto-p">
+                        This is not science. This is cowardice disguised as sophistication. You focus on the "optimal" because it allows you to delay the uncomfortable reality of hard work. It is far easier to research the perfect program for three weeks than it is to pick up a heavy barbell and lift it until your lungs burn and your muscles scream for mercy.
+                    </p>
+                    <p class="manifesto-p highlight">
+                        "An unoptimized program executed with savage intensity will destroy the most perfect, scientifically backed program executed with mediocre effort."
+                    </p>
+                    <p class="manifesto-p">
+                        The human body is an adaptive machine, but it is also lazy. It does not want to build muscle. Muscle is metabolically expensive. The body does not want to burn fat; fat is its survival insurance policy. To force your biology to override its survival mechanisms, you must present it with a threat. You must create a scenario where the body believes that if it does not grow stronger, it will die.
+                    </p>
+
+                    <h3>The Lie of Motivation</h3>
+                    <p class="manifesto-p">
+                        You fail because you are waiting to feel like doing it. You have been conditioned by cinematic montages and social media highlight reels to believe that elite athletes and highly disciplined individuals are driven by a constant, burning fire of inspiration.
+                    </p>
+                    <p class="manifesto-p">
+                        Motivation is an emotion, and like all emotions, it is fleeting, unstable, and untrustworthy. It is a fair-weather friend. If you only train when you feel motivated, you will remain an amateur for the rest of your life. The elite do not operate on motivation; they operate on a contract.
+                    </p>
+                    <p class="manifesto-p highlight">
+                        "Motivation is the spark that burns out in the first gust of wind. Discipline is the cold engine that runs in the dark, through the ice, until the destination is reached."
+                    </p>
+
+                    <h3>The Tragedy of Information Abundance</h3>
+                    <p class="manifesto-p">
+                        We live in an age where the average teenager has access to more training and nutrition data than the Mr. Olympia competitors of the golden era. And yet, the population grows heavier, weaker, and more plagued by preventable chronic illnesses.
+                    </p>
+                    <p class="manifesto-p">
+                        Because information without execution is a form of mental masturbation. It allows you to feel like you are making progress while your body remains static. You have mistaken the acquisition of knowledge for the acquisition of capability. You do not have an information problem; you have an execution problem.
+                    </p>
+
+                    <h3>The Law of Unyielding Consistency</h3>
+                    <p class="manifesto-p">
+                        If you want to understand why most people fail, look at how they spend their weekends. Most people are willing to be disciplined from Monday to Thursday. But the moment Friday night arrives, their identity dissolves. They believe that four days of discipline can neutralize three days of indulgence.
+                    </p>
+                    <p class="manifesto-p">
+                        This is physiological ignorance. The human body does not keep a calendar. True transformation requires an unyielding, monotonous consistency. The individuals who have built bodies that look like they were carved out of marble did not do it by being balanced. They did it by being obsessed.
+                    </p>
+
+                    <h3>The Mirror of Identity</h3>
+                    <p class="manifesto-p">
+                        Your physical state is a direct reflection of your identity. A weak, neglected body is not a misfortune; it is a choice. It is the physical evidence of a thousand small surrenders made in the dark. Every time you hit the snooze button, choose processed food, or cut a workout short, you are voting for a weaker version of yourself.
+                    </p>
+                    <p class="manifesto-p highlight">
+                        "You must change your identity before you change your behavior. You must kill the version of yourself that is soft, comfortable, and full of excuses."
+                    </p>
+
+                    <h3>The Illusion of Longevity</h3>
+                    <p class="manifesto-p">
+                        There is a modern trend that seeks to separate fitness from capability, focusing instead on "longevity" and "wellness." They want to live forever, but they are terrified of being strong. What good is living to be one hundred years old if you cannot lift your own body weight off the floor?
+                    </p>
+                    <p class="manifesto-p">
+                        Do not build a body that is merely a fragile museum piece. Build a body that is a weapon. You preserve a sword not by keeping it in a velvet sheath, but by keeping it clean, sharp, and ready for battle. Treat your body as a sword.
+                    </p>
+                </article>
+            </div>
+            
+            <div class="codex-action">
+                <button class="primary-btn glow-btn next-section-btn" data-target="mirror-section">Face the Mirror of Truth</button>
+            </div>
+        </section>
+
+        <!-- Section 3: Mirror (Interactive Assessment) -->
+        <section id="mirror-section" class="app-section">
+            <div class="section-header">
+                <span class="section-tag">II. THE CRUCIBLE MIRROR</span>
+                <h2 class="section-title">Assess Your Fitness Delusions</h2>
+                <p class="section-intro">Answer these questions with brutal honesty. The Crucible does not validate excuses.</p>
+            </div>
+
+            <!-- Quiz Card -->
+            <div id="quiz-container" class="card glass-card">
+                <div class="progress-bar-container">
+                    <div id="quiz-progress" class="progress-bar"></div>
+                </div>
+                <div id="question-card" class="question-card">
+                    <span id="question-number" class="question-number">Question 1 of 7</span>
+                    <h3 id="question-text" class="question-text">How do you respond when you do not feel like training?</h3>
+                    <div id="options-container" class="options-container">
+                        <!-- Options generated by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Card (Initially Hidden) -->
+            <div id="results-container" class="card glass-card hidden">
+                <h3 class="results-header">YOUR DIAGNOSIS</h3>
+                <div class="results-layout">
+                    <div class="chart-wrapper">
+                        <canvas id="assessment-chart" width="300" height="300"></canvas>
+                    </div>
+                    <div class="archetype-info">
+                        <div id="archetype-title" class="archetype-title">THE OPTIMIZING COWARD</div>
+                        <p id="archetype-description" class="archetype-description">
+                            You possess a library of physiological concepts but execute none of them. You research supplement stacks and optimal training splits to hide the fact that you dread physical discomfort. You are an academic in a temple of action.
+                        </p>
+                        
+                        <div class="score-breakdown">
+                            <div class="score-bar-group">
+                                <span class="score-label">Discipline</span>
+                                <div class="score-track"><div id="bar-discipline" class="score-fill" style="width: 30%"></div></div>
+                            </div>
+                            <div class="score-bar-group">
+                                <span class="score-label">Accountability</span>
+                                <div class="score-track"><div id="bar-accountability" class="score-fill" style="width: 40%"></div></div>
+                            </div>
+                            <div class="score-bar-group">
+                                <span class="score-label">Intensity</span>
+                                <div class="score-track"><div id="bar-intensity" class="score-fill" style="width: 20%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="results-action">
+                    <button id="retest-btn" class="secondary-btn">Recalculate</button>
+                    <button class="primary-btn glow-btn next-section-btn" data-target="covenant-section">Seal the Covenant</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Covenant (Signature and Rules) -->
+        <section id="covenant-section" class="app-section">
+            <div class="section-header">
+                <span class="section-tag">III. THE COVENANT</span>
+                <h2 class="section-title">Bind Yourself to the Sovereign Rules</h2>
+                <p class="section-intro">Create your contract of non-negotiable standards. You cannot compromise once sealed.</p>
+            </div>
+
+            <div class="covenant-layout">
+                <!-- Contract Form -->
+                <div id="covenant-builder" class="card glass-card">
+                    <h3>The Non-Negotiable Laws</h3>
+                    <p class="form-instruction">Select the laws you swear to execute daily. Failure is a violation of your own sovereignty.</p>
+                    
+                    <form id="covenant-form">
+                        <div class="form-group">
+                            <label for="cov-name">Enter Your Legal Name</label>
+                            <input type="text" id="cov-name" required placeholder="For the records of the forge">
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="law" value="train" checked disabled>
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">Execute physical strain daily (Lift, run, carry) - <em>Non-negotiable</em></span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="law" value="nutrition" checked>
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">Consume only biological fuels (No processed sugar/junk)</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="law" value="sleep" checked>
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">Honor recovery (7.5+ hours of uninterrupted sleep)</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="law" value="weekend" checked>
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">Abolish weekend regression (Consistency Mon-Sun)</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="law" value="no-complaint">
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">Banish complaints, justifications, and vocal excuses</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Signature Pad -->
+                <div id="signature-panel" class="card glass-card">
+                    <h3>Seal the Contract</h3>
+                    <p class="form-instruction">Draw your signature below using touch or cursor to finalize the bond.</p>
+                    
+                    <div class="signature-canvas-wrapper">
+                        <canvas id="signature-pad" width="360" height="150"></canvas>
+                    </div>
+                    
+                    <div class="canvas-actions">
+                        <button id="clear-sig" class="secondary-btn text-btn">Clear Canvas</button>
+                        <button id="seal-btn" class="primary-btn glow-btn">SEAL COVENANT</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sealed Covenant View (Initially Hidden) -->
+            <div id="covenant-sealed-view" class="card glass-card hidden">
+                <div class="seal-icon-wrapper">
+                    <div class="seal-glow-ring"></div>
+                    <div class="seal-core">SEALED</div>
+                </div>
+                <h3 class="sealed-title">THE COVENANT IS BINDING</h3>
+                <p class="sealed-subtitle">Signed by: <strong id="sealed-signature-name">Name</strong></p>
+                <div class="sealed-laws-list">
+                    <ul id="active-laws-summary">
+                        <!-- Active laws will display here -->
+                    </ul>
+                </div>
+                <div class="covenant-actions">
+                    <button id="break-covenant-btn" class="secondary-btn warn-btn">Break the Covenant (Reset)</button>
+                    <button class="primary-btn glow-btn next-section-btn" data-target="tax-section">Acquire Daily Strain</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Daily Tax (Strain Generator) -->
+        <section id="tax-section" class="app-section">
+            <div class="section-header">
+                <span class="section-tag">IV. THE DAILY TAX</span>
+                <h2 class="section-title">The progressive biological strain protocol</h2>
+                <p class="section-intro">Your body adapts to trauma, not comfort. Execute your assigned daily physical strain.</p>
+            </div>
+
+            <div class="tax-layout">
+                <!-- Active Strain Challenge -->
+                <div class="card glass-card tax-card">
+                    <div class="tax-header">
+                        <span class="tax-id" id="tax-code">PROTOCOL 88</span>
+                        <span class="tax-status-tag" id="tax-status">UNPAID</span>
+                    </div>
+                    <h3 id="tax-title" class="tax-title">The Death March</h3>
+                    <p id="tax-desc" class="tax-desc">Perform a weighted walk of 5 miles, carrying 20% of your bodyweight. No music, no distractions, only the friction of your feet and the weight of your choices.</p>
+                    
+                    <div class="tax-action-panel">
+                        <button id="pay-tax-btn" class="primary-btn glow-btn">MARK PHYSICAL TAX PAID</button>
+                        <button id="reroll-tax-btn" class="secondary-btn text-btn">Re-forge Challenge</button>
+                    </div>
+                </div>
+
+                <!-- Streak and Adherence Tracker -->
+                <div class="card glass-card streak-card">
+                    <h3>Discipline Streak</h3>
+                    <div class="streak-stats">
+                        <div class="stat-box">
+                            <span id="streak-count" class="stat-number">0</span>
+                            <span class="stat-label">Days Sealed</span>
+                        </div>
+                        <div class="stat-box">
+                            <span id="total-taxes-paid" class="stat-number">0</span>
+                            <span class="stat-label">Taxes Paid</span>
+                        </div>
+                    </div>
+                    
+                    <div class="streak-meter-wrapper">
+                        <div class="streak-flame" id="streak-flame">🔥</div>
+                        <p class="streak-msg" id="streak-msg">Sign the covenant to begin your journey of absolute consistency.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        <p>THE CRUCIBLE &copy; 2026. ALL RIGHTS RESERVED. NO EXCUSES ACCEPTED.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
